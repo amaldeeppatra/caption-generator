@@ -51,4 +51,4 @@ def generate_caption():
     return jsonify({"caption": result.text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8050, host='0.0.0.0')
