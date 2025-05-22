@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 p-4">
+    <!-- Intro -->
+    <div class="col-span-2 bg-gray-800 p-6 rounded-lg">
+      <h1 class="text-2xl font-bold">Hi, I'm [Your Name] —</h1>
+      <p class="mt-2">Lead product designer based in [City].</p>
+    </div>
+
+    <!-- Image Cards -->
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <img src="image1.jpg" alt="Project 1" class="rounded-lg">
+    </div>
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <img src="image2.jpg" alt="Project 2" class="rounded-lg">
+    </div>
+
+    <!-- About -->
+    <div class="col-span-2 bg-gray-800 p-6 rounded-lg">
+      <h2 class="text-xl font-bold">About</h2>
+      <p class="mt-2">Passionate about design and solving problems.</p>
+    </div>
+
+    <!-- Resources -->
+    <div class="bg-gray-800 p-6 rounded-lg">
+      <h2 class="text-xl font-bold">Resources</h2>
+      <p class="mt-2">Speed up your workflow with these tools.</p>
+    </div>
+
+    <!-- Subscribe -->
+    <div class="col-span-2 bg-gray-800 p-6 rounded-lg">
+      <h2 class="text-xl font-bold">
+
+        Get design tips & guides!</h2>
+        <form class="mt-4 flex">
+          <input type="email" placeholder="Your email address" class="w-full p-2 rounded-l-lg bg-gray-700 text-white focus:outline-none">
+          <button type="submit" class="bg-blue-500 p-2 rounded-r-lg text-white hover:bg-blue-600">Subscribe</button>
+        </form>
+      </div>
+  
+      <!-- Tools Stack -->
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-xl font-bold">Stack I Use</h2>
+        <div class="flex mt-4 space-x-4">
+          <img src="tool1.png" alt="Tool 1" class="w-10 h-10">
+          <img src="tool2.png" alt="Tool 2" class="w-10 h-10">
+          <img src="tool3.png" alt="Tool 3" class="w-10 h-10">
+        </div>
+      </div>
+  
+      <!-- Contact -->
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h2 class="text-xl font-bold">Have a project in mind?</h2>
+        <button class="mt-4 bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center hover:bg-gray-600">
+          <span>Copy email</span>
+          <svg class="w-5 h-5 ml-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21h11m-5-9h6m-6 0V3m0 9h6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.querySelector('.copy-email').addEventListener('click', () => {
+    navigator.clipboard.writeText('your-email@example.com');
+    alert('Email copied to clipboard!');
+    });
+  </script>
+  </html>
+  
